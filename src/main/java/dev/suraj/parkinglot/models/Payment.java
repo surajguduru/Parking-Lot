@@ -1,9 +1,16 @@
 package dev.suraj.parkinglot.models;
 
-public class Payment {
-    private int id;
-    private Mode mode;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.Date;
+@Getter
+@Setter
+public class Payment extends BaseModel{
+
+    private PaymentMode paymentMode;
     private double amount;
-    private String time;
-    private String status;
+    private Date time;
+    private PaymentStatus paymentStatus;
+    private String referenceNumber;
 }

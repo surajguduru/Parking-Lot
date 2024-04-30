@@ -1,8 +1,12 @@
 package dev.suraj.parkinglot.models;
 
-public class Operator {
-    private int id;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Operator extends BaseModel{
+
     private String name;
-    private String phoneNumber;
     private int empId;
 }

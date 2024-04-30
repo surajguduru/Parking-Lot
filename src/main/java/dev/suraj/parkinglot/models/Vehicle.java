@@ -1,8 +1,12 @@
 package dev.suraj.parkinglot.models;
 
-public class Vehicle {
-    private int id;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Vehicle extends BaseModel{
     private VehicleType vehicleType;
-    private User owner;
-    private String licensePlate;
+    private String ownerName;
+    private String number;
 }

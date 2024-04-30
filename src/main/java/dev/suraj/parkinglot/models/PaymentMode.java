@@ -1,6 +1,6 @@
 package dev.suraj.parkinglot.models;
 
-public enum Mode {
+public enum PaymentMode {
     CASH,
     CREDIT_CARD,
     DEBIT_CARD,

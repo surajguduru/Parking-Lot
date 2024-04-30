@@ -1,12 +1,15 @@
 package dev.suraj.parkinglot.models;
 
-import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
-public class ParkingSpot {
-    private int id;
-    private int number;
-    private List<VehicleType> vehicleTypes;
-    private Status status;
+import java.util.List;
+@Getter
+@Setter
+public class ParkingSpot extends BaseModel{
+    private int spotNumber;
+    private List<VehicleType> supportedVehicleTypes;
+    private ParkingSpotStatus parkingSpotStatus;
     private ParkingFloor parkingFloor;
 
 }
